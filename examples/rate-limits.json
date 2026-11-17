@@ -1,0 +1,6 @@
+{
+  "providers": [
+    { "name": "go", "command": "~/.config/herdr-app/rate-limits/opencode-go.sh" },
+    { "name": "claude", "command": "~/.config/herdr-app/rate-limits/claude.sh" }
+  ]
+}

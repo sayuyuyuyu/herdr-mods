@@ -1,0 +1,8 @@
+{
+  "place": "none",
+  "title": "Background",
+  "overlay": {
+    "kind": "dialog",
+    "width": 560
+  }
+}
