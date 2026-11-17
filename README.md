@@ -64,7 +64,7 @@ herdr-app do layout.switch --name rate
 
 ### アダプタ
 
-`examples/rate-limits/` の 2 つはそのまま動く。どちらも `jq` と `curl` を使う。
+`examples/rate-limits/` の 2 つはそのまま動く。`opencode-go.sh` は `curl` と `jq`、`claude.sh` は POSIX の `sed` だけで動く。
 
 - `opencode-go.sh`：OpenCode Go の割当。`/inference/go/v1/usage` を叩き、鍵は Pi の `~/.pi/agent/auth.json` から読む（`OPENCODE_GO_API_KEY` があればそちらを優先）
 - `claude.sh`：Claude Code の割当。`~/.cache/claude-statusline/rate.json` を読む（`CLAUDE_RATE_FILE` で変更できる）
