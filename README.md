@@ -31,6 +31,13 @@ herdr-app do mod.open --name bg-settings
 
 毎回使うなら、左レールの mod（たとえば `workspace-chrome`）の行に `run("mod.open", { name: "bg-settings" })` を足す。
 
+既存のレイアウトを触らずに試すなら、`examples/layout.json` を別名で置いて切り替える。同梱の `spaces` / `agents` / `tabs` と `rate-status` だけで組んであり、`bg-settings` が編集する `sidebar` / `tabs` / `main` の id を持つ。
+
+```sh
+cp examples/layout.json ~/.config/herdr-app/layouts/rate.json
+herdr-app do layout.switch --name rate
+```
+
 ## rate-status
 
 ### 設定
